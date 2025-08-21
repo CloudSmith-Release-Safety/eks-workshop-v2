@@ -83,3 +83,11 @@ Statement:
           - spot.amazonaws.com
           - fis.amazonaws.com
           - transitgateway.amazonaws.com
+  - Effect: Deny
+  Action:
+    - iam:CreateRole
+    - iam:DeleteRole
+  Resource: "*"
+  Condition:
+    StringNotEquals:
+      "aws:RequestedRegion": ["us-west-2", "us-east-1"]
