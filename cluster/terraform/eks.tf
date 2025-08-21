@@ -28,6 +28,14 @@ module "eks" {
         enableNetworkPolicy = "true"
       })
     }
+    aws-ebs-csi-driver = {  # Add this entire block
+    most_recent = true
+    configuration_values = jsonencode({
+      controller = {
+        replicaCount = 2
+      }
+    })
+  }
   }
 
   vpc_id     = module.vpc.vpc_id
