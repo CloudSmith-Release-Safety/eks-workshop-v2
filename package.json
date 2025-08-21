@@ -21,12 +21,12 @@
   "author": "",
   "license": "Apache-2.0",
   "devDependencies": {
-    "cspell": "^9.0.0",
+    "cspell": "^10.0.0",
     "lint-staged": "^16.0.0",
     "markdown-link-check": "3.13.7",
-    "markdownlint-cli2": "^0.18.0",
+    "markdownlint-cli2": "^0.20.0",
     "npm-run-all2": "^8.0.0",
-    "prettier": "^3.2.5",
+    "prettier": "^4.0.0",
     "prettier-plugin-sh": "^0.17.0"
   },
   "lint-staged": {
